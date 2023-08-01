@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile</title>
+    <!-- Icon -->
+    <link rel="icon" href="Assets/letter-p (1).png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&family=Caveat:wght@400;500;600;700&family=Dai+Banna+SIL:ital,wght@1,300&family=Edu+SA+Beginner&family=Lora:ital@1&family=Poppins&family=REM&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-logo">
+        <img src="Assets/letter-p.png" alt="logo" />
+      </div>
+      <div class="navbar-items">
+        <button class="nav-button" onclick="display()">
+          <img class="nav-img" src="Assets/menu.png" />
+        </button>
+        <div class="nav-links">
+          <a class="link" href="#about">About</a>
+          <a class="link" href="#skills">Skills</a>
+          <a class="link" href="#projects">Projects</a>
+          <a class="link" href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <section id="title">
+      <h1 class="title-heading">Coder & Fullstack Web Developer</h1>
+      <p class="title-para">Eat, Code, Sleep, Repeat</p>
+      <img class="title-img" src="Assets/boy.png" alt="boy" />
+      <img class="device-img" src="Assets/hero-devices.png" />
+    </section>
+    <section id="about">
+      <div class="about">
+        <h3 class="about-heading">Hi, I'm Parth. Nice to meet you.</h3>
+        <p class="about-para">
+          I am sudent of VITB University and a coder. It's been a while since I
+          started my journey as web developer and I have made a few projects as
+          well.
+        </p>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="skill">
+        <img class="skill-img" src="Assets/code.png" alt="Web Development" />
+        <h2 class="skill-title">Web Development</h2>
+        <p class="skill-para">
+          I like to code things from scratch, and enjoy bringing ideas to life
+          in the browser.
+        </p>
+        <p class="skill-para skill-color">Languages I know:</p>
+        <p class="skill-para">HTML, CSS, JavaScript</p>
+        <p class="skill-para skill-color">Tools:</p>
+        <div class="skill-para skill-tools">
+          <p class="skill-para skill-tool">Bootstrap</p>
+          <p class="skill-para skill-tool">Node.js</p>
+          <p class="skill-para skill-tool">MongoDB</p>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h2 class="project-title">My Recent Works</h2>
+      <div class="cards">
+        <div class="card card-1">
+          <h2 class="card-title">Student Zone</h2>
+          <div class="card-bg">
+            <p class="card-para">Collection of Notes and PYQs.</p>
+            <a
+              class="card-link"
+              href="https://pmaheshwari11.github.io/VITB_Student_zone/index.html"
+              target="_blank"
+              >Visit Site</a
+            >
+          </div>
+        </div>
+        <div class="card card-2">
+          <h2 class="card-title">Weather Forecast</h2>
+          <div class="card-bg">
+            <p class="card-para">Weather forecast for most of places.</p>
+            <a
+              class="card-link"
+              href="https://weather-bkos.onrender.com/"
+              target="_blank"
+              >Visit Site</a
+            >
+          </div>
+        </div>
+        <div class="card card-3">
+          <h2 class="card-title">QR Generator</h2>
+          <div class="card-bg">
+            <p class="card-para">QR Maker, easy to use.</p>
+            <a
+              class="card-link"
+              href="https://qr-maker.onrender.com/"
+              target="_blank"
+              >Visit Site</a
+            >
+          </div>
+        </div>
+        <div class="card card-4">
+          <h2 class="card-title">Words Matter</h2>
+          <div class="card-bg">
+            <p class="card-para">Social site, blogging platform.</p>
+            <a
+              class="card-link"
+              href="https://words-matter.onrender.com/"
+              target="_blank"
+              >Visit Site</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact">
+        <a
+          class="social-link"
+          href="mailto:parthdudani2022@vitbhopal.ac.in"
+          target="_blank"
+        >
+          <img class="social" src="Assets/email.png" alt="gmail" />
+        </a>
+        <a
+          class="social-link"
+          href="https://github.com/Pmaheshwari11"
+          target="_blank"
+        >
+          <img class="social" src="Assets/github.png" alt="github" />
+        </a>
+        <a
+          class="social-link"
+          href="https://www.linkedin.com/in/parth-dudani-97b594250"
+          target="_blank"
+        >
+          <img class="social" src="Assets/linkedin.png" alt="linkein" />
+        </a>
+        <a
+          class="social-link"
+          href="https://www.instagram.com/parth_dudani/"
+          target="_blank"
+        >
+          <img class="social" src="Assets/instagram.png" alt="instagram" />
+        </a>
+
+        <p class="copyright">&COPY;Parth Dudani</p>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>

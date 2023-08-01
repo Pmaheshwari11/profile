@@ -1,0 +1,349 @@
+body {
+  margin: 0%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 6%;
+}
+
+.navbar-logo img {
+  height: 60px;
+}
+
+.navbar-items {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 18px;
+  font-family: "Lora";
+  font-size: 35px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  color: #6d00a8;
+  font-weight: 600;
+}
+
+.nav-button {
+  display: none;
+}
+
+#title {
+  padding: 2% 6%;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-bottom: 0;
+}
+
+.title-heading {
+  font-family: "Dai Banna SIL";
+  font-size: 5rem;
+  color: #071952;
+  margin-bottom: 10px;
+}
+
+.title-para {
+  margin: 0;
+  font-family: "borel";
+  font-size: 2.5rem;
+}
+
+.title-img {
+  margin: 35px 0;
+  width: 200px;
+}
+
+.device-img {
+  width: 100%;
+}
+
+#about {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: #7b23ff;
+  color: #ffffff;
+}
+
+.about {
+  padding: 10% 10% 5%;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  font-family: "Rubik";
+}
+
+.about-para {
+  font-size: 1.5rem;
+  font-family: "poppins";
+}
+
+#skills {
+  padding: 2% 6%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.skill {
+  text-align: center;
+  border: solid #aaaaaa 0.1px;
+  padding: 30px 45px;
+  border-radius: 10px;
+  box-shadow: 5px 2px 7px #aaaaaa;
+}
+
+.skill-img {
+  width: 60px;
+}
+
+.skill-title {
+  font-size: 30px;
+}
+
+.skill-para {
+  font-size: 20px;
+}
+
+.skill-color {
+  color: #b534fa;
+  font-weight: 600;
+}
+
+#projects {
+  padding: 2% 6%;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.project-title {
+  text-align: center;
+  font-size: 40px;
+  font-family: "REM";
+  grid-column: 3fr;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.card {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.card-title {
+  font-family: "Edu SA Beginner";
+  font-size: 35px;
+}
+
+.hide-title {
+  display: none;
+}
+
+.card-bg {
+  display: none;
+}
+
+.card-bg-active {
+  display: block;
+  padding: 20px;
+}
+
+.card-para {
+  font-family: "Poppins";
+  font-size: 25px;
+}
+
+.card-link {
+  outline: outset #6d00a8;
+  border-radius: 50px;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: black;
+  font-family: "Caveat";
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.card-link:hover {
+  background-color: #ba3aff;
+  color: white;
+}
+
+.card-1 {
+  background: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.card-2 {
+  background: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+}
+
+.card-3 {
+  background: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+}
+
+.card-4 {
+  background: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+}
+
+#contact {
+  height: 250px;
+  background-color: #7b23ff;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.contact {
+  padding-top: 100px;
+}
+
+.social {
+  width: 50px;
+  margin: 10px;
+}
+
+.social-link {
+  text-decoration: none;
+}
+
+.copyright {
+  font-size: 20px;
+}
+
+@media (min-width: 756px) and (max-width: 1024px) {
+  .navbar-items {
+    flex-flow: column;
+    align-items: end;
+  }
+
+  .nav-img {
+    height: 40px;
+    display: block;
+    margin-top: 15px;
+  }
+
+  .nav-button {
+    border: none;
+    background-color: transparent;
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+  .link {
+    margin: 10px;
+  }
+
+  .active {
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+    align-items: flex-end;
+    margin-top: 30px;
+    padding-right: 50px;
+  }
+
+  .title-heading {
+    font-size: 4.2rem;
+  }
+  .title-para {
+    font-size: 1.6;
+  }
+
+  .about-heading {
+    font-size: 2.5rem;
+    font-family: "Rubik";
+  }
+
+  .about-para {
+    font-size: 1.5rem;
+    font-family: "poppins";
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 756px) {
+  .navbar-items {
+    flex-flow: column;
+    align-items: end;
+  }
+
+  .nav-img {
+    height: 40px;
+    display: block;
+    margin-top: 15px;
+  }
+
+  .nav-button {
+    border: none;
+    background-color: transparent;
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+  .link {
+    margin: 10px;
+  }
+
+  .active {
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+    align-items: flex-end;
+    margin-top: 30px;
+    padding-right: 30px;
+  }
+
+  .title-heading {
+    font-size: 3.5rem;
+  }
+
+  .title-para {
+    font-size: 1.6rem;
+  }
+
+  .about-heading {
+    font-size: 2rem;
+  }
+
+  .about-para {
+    font-size: 1.2rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
