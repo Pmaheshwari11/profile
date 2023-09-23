@@ -146,6 +146,16 @@ body {
   grid-column: 3fr;
 }
 
+.note-head {
+  color: #ff2525;
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+.note {
+  font-size: 20px;
+}
+
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
