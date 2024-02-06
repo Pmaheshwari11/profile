@@ -60,52 +60,16 @@ for (let i = 0; i < cards.length; i++) {
   card_title = document.getElementsByClassName("card-title");
   cards[i].addEventListener("mouseenter", function () {
     card = this;
-    switch (card.classList[1]) {
-      case "card-1":
-        card_bg[0].classList.add("card-bg-active");
-        card_title[0].classList.add("hide-title");
-        break;
-      case "card-2":
-        card_bg[1].classList.add("card-bg-active");
-        card_title[1].classList.add("hide-title");
-        break;
-      case "card-3":
-        card_bg[2].classList.add("card-bg-active");
-        card_title[2].classList.add("hide-title");
-        break;
-      case "card-4":
-        card_bg[3].classList.add("card-bg-active");
-        card_title[3].classList.add("hide-title");
-        break;
-
-      default:
-        break;
-    }
+    const id = card.classList[1].slice(5);
+    card_bg[cards.length - id].classList.add("card-bg-active");
+    card_title[cards.length - id].classList.add("hide-title");
   });
 
   cards[i].addEventListener("mouseleave", function () {
     card = this;
-    switch (card.classList[1]) {
-      case "card-1":
-        card_bg[0].classList.remove("card-bg-active");
-        card_title[0].classList.remove("hide-title");
-        break;
-      case "card-2":
-        card_bg[1].classList.remove("card-bg-active");
-        card_title[1].classList.remove("hide-title");
-        break;
-      case "card-3":
-        card_bg[2].classList.remove("card-bg-active");
-        card_title[2].classList.remove("hide-title");
-        break;
-      case "card-4":
-        card_bg[3].classList.remove("card-bg-active");
-        card_title[3].classList.remove("hide-title");
-        break;
-
-      default:
-        break;
-    }
+    const id = card.classList[1].slice(5);
+    card_bg[cards.length - id].classList.remove("card-bg-active");
+    card_title[cards.length - id].classList.remove("hide-title");
   });
 }
 
