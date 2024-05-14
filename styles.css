@@ -232,6 +232,15 @@ body {
   background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
 }
 
+.card-6 {
+  background: rgb(5, 132, 134);
+  background: linear-gradient(
+    0deg,
+    rgba(5, 132, 134, 1) 0%,
+    rgba(255, 239, 205, 1) 100%
+  );
+}
+
 #contact {
   height: 250px;
   background-color: #7b23ff;
