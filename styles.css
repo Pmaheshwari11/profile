@@ -241,6 +241,15 @@ body {
   );
 }
 
+.card-7 {
+  background: rgb(105, 228, 47);
+  background: linear-gradient(
+    16deg,
+    rgba(105, 228, 47, 1) 0%,
+    rgba(255, 226, 107, 1) 100%
+  );
+}
+
 #contact {
   height: 250px;
   background-color: #7b23ff;
